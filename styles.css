@@ -1,0 +1,85 @@
+body{
+   margin: 0; 
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+}
+header{
+background-color: black;
+flex-basis: 20%;
+max-height: 20%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 50px;
+
+
+/* align-items */
+}
+main{
+background-color: red;
+flex-basis: 70%;
+justify-content: center;
+align-items: center;
+display: flex;
+
+}
+footer{
+background-color: black;
+flex-basis: 10%;
+color: white;
+display: flex;
+gap: 20px;
+justify-content: center;
+gap: 100px;
+
+
+}
+.coca{
+    height: 100%;
+}
+a {
+    color: white;
+    
+}
+nav{
+
+    display: flex;
+    gap: 50px;
+    
+}
+
+
+
+
+/* max-width -> de ahi para abajo */
+/* min-width -> de ahi para arriba */
+@media (max-width: 500px){
+    nav{
+        display: none;
+    }
+
+    /* flex-direction: column; */
+    footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.boton-imagen{
+    width: 50px;
+}
+
+.boton-menu{
+    background-color: transparent;
+    border:none;
+}
+
+/* Tarea: ocultar en computadora el menu hamburguesa */
+
+@media (min-width:500px){
+    .boton-imagen{
+        display: none;
+    }
+}
